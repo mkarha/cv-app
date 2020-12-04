@@ -1,0 +1,111 @@
+
+  <!--
+    The header
+    Contains a toolbar  which conatins a menu button, 
+    which whe pressed opens a drop down menu.
+  -->  
+  
+<!--<ion-header>
+  <ion-toolbar>
+    
+   <ion-buttons slot="start">
+  <ion-menu-toggle>
+    <ion-button>
+      <ion-icon slot="icon-only" name="menu"></ion-icon>
+    </ion-button>
+  </ion-menu-toggle>
+</ion-buttons> 
+  
+  </ion-toolbar>
+</ion-header>-->
+
+
+
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <h1 class="ion-text-center">Contents</h1>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      <ion-grid>
+        <ion-row justify-content-center>
+          <ion-col class='profile' align-self-center size-md="6" size-lg="5" size-xs="6">
+            <div  padding>
+              <ion-tab-button   routerLinkActive="tab-selected" routerLink="/profile" class="ios" tab="profile">
+                <ion-icon name="person"></ion-icon>
+                <ion-label class='labeli'>profile</ion-label>
+              </ion-tab-button>
+            </div>           
+          </ion-col>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="6">
+           <div padding>
+            <ion-tab-button   routerLinkActive="tab-selected" routerLink="/technical" class="ios" tab="technical">
+              <ion-icon name="calculator"></ion-icon>
+              <ion-label class='labeli'>tech skills</ion-label>
+            </ion-tab-button>
+           </div>
+          </ion-col>         
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col class='profile' align-self-center size-md="6" size-lg="5" size-xs="6">
+            <div  padding>
+              <ion-tab-button   routerLinkActive="tab-selected" routerLink="/soft" class="ios" tab="soft">
+                <ion-icon name="chatbubbles"></ion-icon>
+                <ion-label class='labeli'>soft skills</ion-label>
+              </ion-tab-button>
+            </div>           
+          </ion-col>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="6">
+           <div padding>
+            <ion-tab-button   routerLinkActive="tab-selected" routerLink="/personal-project" class="ios" tab="personal-project">
+              <ion-icon name="paper-plane"></ion-icon>
+              <ion-label class='labeli'>personal<br>project</ion-label>
+            </ion-tab-button>
+           </div>
+          </ion-col>         
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col class='profile' align-self-center size-md="6" size-lg="5" size-xs="6">
+            <div  padding>
+              <ion-tab-button   routerLinkActive="tab-selected" routerLink="/team-project" class="ios" tab="team-project">
+                <ion-icon name="people"></ion-icon>
+                <ion-label class='labeli'>team project</ion-label>
+              </ion-tab-button>
+            </div>           
+          </ion-col>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="6">
+           <div padding>
+            <ion-tab-button   routerLinkActive="tab-selected" routerLink="/extra-activities" class="ios" tab="extra-activities">
+              <ion-icon name="construct"></ion-icon>
+              <ion-label class='labeli'>extra<br>activities</ion-label>
+            </ion-tab-button>
+           </div>
+          </ion-col>         
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col class='profile' align-self-center size-md="6" size-lg="5" size-xs="6">
+            <div  padding>
+              <ion-tab-button   routerLinkActive="tab-selected" routerLink="/hobbies" class="ios" tab="hobbies">
+                <ion-icon name="headset"></ion-icon>
+                <ion-label class='labeli'>hobbies</ion-label>
+              </ion-tab-button>
+            </div>           
+          </ion-col>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="6">
+           <div padding>
+            <ion-tab-button   routerLinkActive="tab-selected" routerLink="/contact" class="ios" tab="contact">
+              <ion-icon name="mail"></ion-icon>
+              <ion-label class='labeli'>contact</ion-label>
+            </ion-tab-button>
+           </div>
+          </ion-col>         
+        </ion-row>
+      </ion-grid>
+      
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+

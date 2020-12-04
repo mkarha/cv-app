@@ -1,17 +1,82 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-content>     
+    <ion-buttons>
+      <ion-list>
+      <ion-menu-toggle auto-hide="false">
+        <ion-tab-button tab="home">
+          <ion-item button>
+           <ion-icon slot="start" name='home'></ion-icon>
+            <ion-label>
+             Home
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="profile">
+          <ion-item button>
+            <ion-icon slot="start" name='person'></ion-icon>
+            <ion-label>
+              Profile
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="technical">
+           <ion-item button>
+             <ion-icon slot="start" name='calculator'></ion-icon>
+             <ion-label>
+               Technical Skills
+             </ion-label>
+           </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="soft">
+          <ion-item button>
+           <ion-icon slot="start" name='chatbubble'></ion-icon>
+            <ion-label>
+             Soft Skills
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="personal-projet">
+          <ion-item button>
+           <ion-icon slot="start" name='paper-plane'></ion-icon>
+            <ion-label>
+             Personal Project
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="team-project">
+          <ion-item button>
+           <ion-icon slot="start" name='people'></ion-icon>
+            <ion-label>
+             Team Project
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="extra-activities">
+          <ion-item button>
+           <ion-icon slot="start" name='construct'></ion-icon>
+            <ion-label>
+             Extra Activities
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="hobbies">
+          <ion-item button>
+           <ion-icon slot="start" name='headset'></ion-icon>
+            <ion-label>
+             Hobbies
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+        <ion-tab-button tab="contact">
+          <ion-item button>
+           <ion-icon slot="start" name='mail'></ion-icon>
+            <ion-label>
+             Contact
+            </ion-label>
+          </ion-item>
+        </ion-tab-button>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-buttons>    
+</ion-content>  
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>

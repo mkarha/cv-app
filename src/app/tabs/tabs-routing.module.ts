@@ -9,26 +9,58 @@ const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('../tab1/tab1.module').then( m => m.Tab1PageModule)
       },
       {
         path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('../tab2/tab2.module').then( m => m.Tab2PageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'profile',
+        loadChildren: () => import('../profile/profile.module').then( m => m.ProfilePageModule)
+      },
+      {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
+      },
+      {
+        path: 'technical',
+        loadChildren: () => import('../technical/technical.module').then( m => m.TechnicalPageModule)
+      },
+      {
+        path: 'soft',
+        loadChildren: () => import('../soft/soft.module').then( m => m.SoftPageModule)
+      },
+      {
+        path: 'personal-project',
+        loadChildren: () => import('../personal-project/personal-project.module').then( m => m.PersonalProjectPageModule)
+      },
+      {
+        path: 'team-project',
+        loadChildren: () => import('../team-project/team-project.module').then( m => m.TeamProjectPageModule)
+      },
+      {
+        path: 'extra-activities',
+        loadChildren: () => import('../extra-activities/extra-activities.module').then( m => m.ExtraActivitiesPageModule)
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('../contact/contact.module').then( m => m.ContactPageModule)
+      },
+      {
+        path: 'hobbies',
+        loadChildren: () => import('../hobbies/hobbies.module').then( m => m.HobbiesPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: 'tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: 'tabs/home',
     pathMatch: 'full'
   }
 ];
