@@ -9,6 +9,8 @@
 -->
 
 <ion-tabs>
+
+ 
     
   <!--
     Configuring the header which holds the toolbar.
@@ -29,6 +31,7 @@
             </ion-col>
             <ion-title>Mikko's CV</ion-title>
           </ion-row>
+          <ion-label>{{date | date:'dd.MM.yyyy hh:mm a':'+0000+2'}}</ion-label>
         </ion-grid>       
       </ion-toolbar>
     </ion-header>  
@@ -45,7 +48,7 @@
     <ion-tab-button tab="home">
       <ion-icon name="home"></ion-icon>
       <ion-label>Home</ion-label>
-    </ion-tab-button>
+    </ion-tab-button>    
 
     <ion-tab-button (click)="logoutUser()">
       <ion-icon name="close-circle"></ion-icon>

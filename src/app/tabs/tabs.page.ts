@@ -4,6 +4,8 @@ The reqired methods for the tab pages.
 
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from '../services/Authentication.service';
+import { NavController } from '@ionic/angular';
+import * as moment from 'moment';
 
 
 @Component({
@@ -13,12 +15,16 @@ import { AuthenticationService } from '../services/Authentication.service';
 })
 export class TabsPage implements OnInit{
 
-  constructor(private authService: AuthenticationService
-    ) { }
+  public date: any;
+
+  constructor(private authService: AuthenticationService,  public navCtrl: NavController
+    ) { this.date = moment();  }
 
 
   ngOnInit() {
   }
+
+
 
   getTime() {
     const today = new Date();
