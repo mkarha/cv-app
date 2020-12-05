@@ -1,3 +1,13 @@
+/*
+Tabs routing module is responsible for handling the routing between the tab-pages.
+the tab-pages are routedthrough the tabs page which sets the global layout for the header and
+bottom tab
+First the required modules are imported.
+Then the routes are set for each page included in the tab-pages.
+If entering the tabs pages from outside the path will be directed through the tabs page to
+add the header and bottom tab.
+*/
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';

@@ -4,7 +4,6 @@ import { AuthGuard } from './services/Auth-Guard.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule),
