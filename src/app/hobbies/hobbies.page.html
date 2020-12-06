@@ -6,9 +6,25 @@
     <ion-card-content class="card-background-page">
       <img src="../assets/sumiko-pieni.jpg"/>
       <div class="card-title"></div>
-      <div class="card-subtitle">My hobbies include, in addition to coding, rc-cars,<br>
-      vintage hifi components and collecting vinyl records.</div>
- 
+      <div class="card-subtitle">My hobbies include, in addition to coding, rc-cars,
+      vintage hifi components and collecting vinyl records.
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-tab-button   routerLinkActive="tab-selected" routerLink="/extra-activities" class="ios" tab="extra-activities">
+            <ion-icon name="arrow-back"></ion-icon>
+            <ion-label class='labeli'>extra-activities</ion-label>
+          </ion-tab-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-tab-button   routerLinkActive="tab-selected" routerLink="/contact" class="ios" tab="contact">
+            <ion-icon name="arrow-forward"></ion-icon>
+            <ion-label class='labeli'>contact</ion-label>
+          </ion-tab-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
       
       
     </ion-card-content>

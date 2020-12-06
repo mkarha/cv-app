@@ -10,6 +10,7 @@ import { BehaviorSubject } from 'rxjs';
 export class AuthenticationService {
 
 authState = new BehaviorSubject(false);
+  loginForm: any;
 
   constructor(
     private router: Router,
@@ -31,20 +32,39 @@ authState = new BehaviorSubject(false);
   }
 
 
-  login() {
-    var dummy_response = {
-      user_id: '007',
-      user_name: 'test'
-    };
-    var wrong_response = {
-      user_id: '000',
-      user_name: 'testi'
-    };
-    this.storage.set('USER_INFO', dummy_response).then((response) => {
-      this.router.navigate(['/tabs']);
-      this.authState.next(true);
-    });
+  /*else
+  {
+    this.logout();
   }
+  };*/
+  //  this.storage.set('LOGIN', dummy_response);
+  //  if('USER_INFO'='LOGIN'
+  login(username: string, password: string) {
+    var dummy_response = {
+      username: "Guest",
+      password: "login"
+    };
+    alert(username.toString() +": " + password.toString());
+    if (username == dummy_response.username) {
+      if(password == dummy_response.password) {
+
+      this.storage.set('USER_INFO', dummy_response).then((response) => {
+        this.router.navigate(['/tabs']);
+        this.authState.next(true);
+        
+      });
+    }
+    else{
+      alert("Wrong password");
+      this.logout();
+    }
+    }
+    else {
+      this.logout();
+    }
+    username = '';
+    password = '';
+  };
 
   logout() {
     this.storage.remove('USER_INFO').then(() => {
@@ -57,6 +77,17 @@ authState = new BehaviorSubject(false);
     return this.authState.value;
   }
 
+  loginNoParam() {
+    var dummy_response = {
+      username: 'Guest',
+      password: 'login'
+    };
+    alert(dummy_response.username +": " + dummy_response.password);
+      this.storage.set('USER_INFO', dummy_response).then((response) => {
+        this.router.navigate(['/tabs']);
+        this.authState.next(true);
+      });
+    }
 
 
 }
