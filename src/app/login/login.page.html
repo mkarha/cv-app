@@ -1,15 +1,25 @@
+<!--
+  Mikko Karhavirta 1900645
+  The login page is the landing page of the appliocation
+-->
+
+<!--Header for the page-->
 <ion-header>
+  <!--Toolbar which holds the title of the page-->
   <ion-toolbar color="primary">
     <ion-title class="ion-text-center">Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!--Content-->
 <ion-content>
+
   <ion-row class="ion-justify-content-center">
     <ion-col size-sm="12" size-lg="5">
       <div class="ion-padding login-card">
         
-  <form (ngSubmit)="onClickSubmit()" padding-right [formGroup]="loginForm">
+        <form (ngSubmit)="onClickSubmit()" padding-right [formGroup]="loginForm">
+
 
   <ion-grid>
     <ion-row justify-content-center>

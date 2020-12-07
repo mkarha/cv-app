@@ -77,17 +77,18 @@ authState = new BehaviorSubject(false);
     return this.authState.value;
   }
 
+  /*
+    Loging in while the login is not yet functional
+  */
   loginNoParam() {
     var dummy_response = {
       username: 'Guest',
       password: 'login'
     };
-    alert(dummy_response.username +": " + dummy_response.password);
       this.storage.set('USER_INFO', dummy_response).then((response) => {
         this.router.navigate(['/tabs']);
         this.authState.next(true);
       });
     }
-
 
 }

@@ -1,8 +1,24 @@
+<!--
+  Mikko Karhavirta 1900645
+  Header and bottom bar from tabs.page.html
+  ion-content follows ion-header and in the tabs.page.html the "slot-bottom"
+  places the bottom bar to it's palce after the content.
+  Content layout with card layout
+  Starting with card-header which states the name of the page/tab
+  Following card-content
+  The content holds a picture, a div-element named card subtitle and 
+  a grid with two columns for the carousel navigation arrows.
+-->
+
+<!--Content-->
 <ion-content>
+  <!--Card-->
   <ion-card>
+    <!--Card header-->
     <ion-card-header>
       <h1 class="ion-text-center">Profile</h1>
     </ion-card-header>
+    <!--Card content-->
     <ion-card-content class="ion-text-center">
       <ion-img src="./assets/naama.png"></ion-img>
       <div class="card-subtitle">
@@ -10,6 +26,7 @@
             student at Laurea UAS. I am currently specializing in Business Information Technology.<br>
             Previously I have worked in logistics and as an entrepreneur.
       </div>
+      <!--Grid for carousel navigation arrows-->
       <ion-grid>
         <ion-row>
           <ion-col size="6">

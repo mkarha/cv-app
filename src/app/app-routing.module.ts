@@ -1,3 +1,11 @@
+/*
+  Mikko Karhavirta 1900645
+  App-routing.module.ts is responsible for routing the
+  pages of the application.
+  This means the pages that atren't under the tab routing protocol.
+
+*/
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './services/Auth-Guard.service';
@@ -12,10 +20,6 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'education',
-    loadChildren: () => import('./education/education.module').then( m => m.EducationPageModule)
   },
 ];
 

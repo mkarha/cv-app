@@ -1,8 +1,25 @@
+<!--
+  Mikko Karhavirta 1900645
+  Header and bottom bar from tabs.page.html
+  ion-content follows ion-header and in the tabs.page.html the "slot-bottom"
+  places the bottom bar to it's palce after the content.
+  Content layout with card layout
+  Starting with card-header which states the name of the page/tab
+  Following card-content
+  The content holds a picture, a div-element named card subtitle which holds
+  also the progress bars to visualize the skills and 
+  a grid with two columns for the carousel navigation arrows.
+-->
+
+<!--Content-->
 <ion-content>
+  <!--Card-->
   <ion-card>
+    <!--Card header-->
     <ion-card-header>
       <h1 class="ion-text-center">Team Project</h1>
     </ion-card-header>
+    <!--Card content-->
     <ion-card-content class="ion-text-center">
       <ion-img src="./assets/team.jpg"></ion-img>
       <div class="card-subtitle">
@@ -18,6 +35,7 @@
         in a way my private project could not have been realized without the<br>
         cooperation with the peer groups and the help from my family.
       </div>
+      <!--Grid for carousel navigation  arrows-->
       <ion-grid>
         <ion-row>
           <ion-col size="6">

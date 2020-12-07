@@ -1,8 +1,25 @@
+<!--
+  Mikko Karhavirta 1900645
+  Header and bottom bar from tabs.page.html
+  ion-content follows ion-header and in the tabs.page.html the "slot-bottom"
+  places the bottom bar to it's palce after the content.
+  Content layout with card layout
+  Starting with card-header which states the name of the page/tab
+  Following card-content
+  The content holds a picture, a div-element named card subtitle which holds
+  also the progress bars to visualize the skills and 
+  a grid with two columns for the carousel navigation arrows.
+-->
+
+<!--Content-->
 <ion-content>
+  <!--Card-->
   <ion-card class="card-background-page">
+    <!--Card header-->
     <ion-card-header>
       <h1 class="ion-text-center">Soft Skills</h1>
     </ion-card-header>
+    <!--Card content-->
     <ion-card-content>
       <img src="../assets/board.jfif"/>
         <div class="card-subtitle">
@@ -17,6 +34,7 @@
           Leadership<br>
           <ion-progress-bar value="0.5"></ion-progress-bar><br />
         </div>
+        <!--Grid for carousel navigation arrows-->
         <ion-grid>
           <ion-row>
             <ion-col size="6">

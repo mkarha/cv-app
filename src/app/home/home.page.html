@@ -6,15 +6,21 @@
 
     The home page holds the menu for the application.
     The contents are displayed in a grid with icons and description.
-    The icon and label are bound together in a tab-button item.
+    The icon and label are bound together in a tab-button item which
+    holds the icon and label in question and binds them to a single button.
   -->  
 
+  <!--Content-->
 <ion-content>
+  <!--Card-->
   <ion-card>
+    <!--Card header-->
     <ion-card-header>
       <h1 class="ion-text-center">Contents</h1>
     </ion-card-header>
+    <!--Card content-->
     <ion-card-content class="ion-text-center">
+      <!--Grid for direct navigation icons-->
       <ion-grid>
         <ion-row justify-content-center>
           <ion-col class='profile' align-self-center size-md="6" size-lg="5" size-xs="6">
