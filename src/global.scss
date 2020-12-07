@@ -24,3 +24,42 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/*link styling*/
+a{
+    color: magenta;
+}
+
+/*header styling^*/
+h1{
+    color: ghostwhite;
+};
+
+/*card subtitle styling*/
+.card-subtitle{
+    color: ghostwhite;
+}
+
+/*paragraph styling*/
+p{
+    color: ghostwhite;
+}
+
+/*icon styling*/
+ion-icon{
+    color: magenta;
+};
+
+/*label styling*/
+ion-label{
+    color: ghostwhite;
+}
+
+/*progress bar styling*/
+ion-progress-bar{
+    height: 20px; 
+    --background:  #3e4041;
+    --buffer-background: ghostwhite;
+    --progress-background: magenta;
+  
+};

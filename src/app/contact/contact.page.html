@@ -1,9 +1,21 @@
+<!--
+  Header and bottom bar from tabs.page.html
+  ion-content follows ion-header and in the tabs.page.html the "slot-bottom"
+  places the bottom bar to it's palce after the content.
+  Content layout with card layout
+  Starting with card-header which states the name of the page/tab
+  Following card-content
+  The content holds a picture, a header (h1), then a paragraph (p) 
+  with the text information and finally a grid with two columns
+  for the carousel navigation arrows.
+-->
+
 <ion-content>
   <ion-card>
     <ion-card-header>
       <h1 class="ion-text-center">Contact</h1>
     </ion-card-header>
-    <ion-card-content class="card-background-page">
+    <ion-card-content>
       <img src="../assets/contact.jpg"/>
       <h1>Mikko Karhavirta</h1>
       <p> 
