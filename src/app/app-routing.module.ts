@@ -21,6 +21,10 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'json-pipe',
+    loadChildren: () => import('./json-pipe/json-pipe.module').then( m => m.JsonPipePageModule)
+  },
 ];
 
 @NgModule({

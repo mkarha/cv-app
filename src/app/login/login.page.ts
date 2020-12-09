@@ -42,7 +42,7 @@ onClickSubmit() {
     username: this.loginForm.get('username'),
     password: this.loginForm.get('password').toString
   };
-  alert(this.loginForm.toString() + ': ' + input.password.toString());
+  alert(input.username.toString() + ': ' + input.password.toString());
   this.newMethod(input);
 
   // this.authService.login(this.loginForm.get('username'), this.loginForm.get('password')) ;
